@@ -6,10 +6,11 @@ import requests
 import tushare as ts
 import datetime
 
+ts.set_token('a9a90478a856a428524e0fa340936b42d00a68e7cc8e699433643ff0')
 pro = ts.pro_api()
 # 分区块导入
 today = datetime.date.today().strftime("%Y%m%d")
-for dbname in ['主板','创业板','中小板','科创板']:
+for dbname in ['科创板','创业板','中小板','主板']:
     db_name = dbname
     conn = pymysql.connect(host='127.0.0.1', user='root', passwd='123456', db=db_name, charset='utf8', local_infile=1)
     # conn.autocommit(1)

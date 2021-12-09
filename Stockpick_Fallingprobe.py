@@ -7,7 +7,7 @@ import Recipe
 
 # 生成时间序列：
 
-state_dt = '2021-07-03'
+state_dt = '2021-01-20'
 para_window = 35
 step = 5
 date_seq ={}
