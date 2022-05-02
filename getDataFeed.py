@@ -51,7 +51,6 @@ print(ind_code_dict)
 conn = pymysql.connect(host='127.0.0.1', user='root', passwd='123456', db=db_name.zb, charset='utf8', local_infile=1)
 cur = conn.cursor()
 
-
 for k,v in ind_code_dict.items():
     try:
         for code in v:
